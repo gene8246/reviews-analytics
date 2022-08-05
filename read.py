@@ -13,3 +13,11 @@ for d in data:
 	sum_len += len(d) #sum_len = sum_len + len(d)
 average = sum_len / len(data)
 print('average count is', average)
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('review of less than 100 words:', len(new))
+
+print(new[1])
