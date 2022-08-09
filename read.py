@@ -20,9 +20,12 @@ for d in data:
 		new.append(d)
 print('review of less than 100 words:', len(new))
 
-good = []
-for d in data:
-	if 'good' in d:
-		good.append(d)
-print('review with good word:', len(good))
-print(good[50])
+good = [d for d in data if 'good' in d]
+print(len(good))
+
+#good = []
+#for d in data:
+#	if 'good' in d:
+#		good.append(d)
+#print('review with good word:', len(good))
+#print(good[50])
